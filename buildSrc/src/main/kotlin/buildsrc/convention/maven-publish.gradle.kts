@@ -20,7 +20,7 @@ publishing {
             }
         }
         // publish to local dir, for testing
-        maven(rootProject.layout.buildDirectory.dir("maven-internal")) {
+        maven(rootProject.layout.projectDirectory.dir(".m2")) {
             name = "ProjectLocalDir"
         }
     }
